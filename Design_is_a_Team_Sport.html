@@ -1,0 +1,448 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      id="metaViewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+      integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"
+    />
+    <title>Sample Site</title>
+    <style>
+      .container {
+        width: 100%;
+        padding-right: 70px;
+        padding-left: 70px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      @media only screen and (max-width: 1200px) {
+        .container {
+          width: 100%;
+          padding-right: 0px !important;
+          padding-left: 0px !important;
+          margin-right: auto;
+          margin-left: auto;
+        }
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      p,
+      label {
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .header {
+        background-color: #f3f3f3;
+        color: #fff;
+      }
+
+      .live-page {
+        padding: 0px;
+        margin: 0 auto;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+      }
+
+      .logo {
+        width: 110px;
+      }
+      .main-container {
+        display: flex;
+        padding-right: 76px;
+        padding-left: 76px;
+      }
+      .left-column {
+        padding: 20px;
+        width: 100%;
+        /* padding-left: 150px; */
+        padding-top: 20px;
+      }
+      .right-column {
+        padding: 20px;
+        width: 100%;
+      }
+      /* left column container */
+      .video-container {
+        padding: 0px;
+      }
+      .video-title {
+        padding: 10px;
+      }
+      .video {
+        padding: 10px;
+      }
+      .contact-container {
+        padding: 20px;
+        background: #f3f3f3;
+        font-size: 19px;
+      }
+      .contact-container h2 {
+        font-size: 25px !important;
+      }
+      .contact-container h2 {
+        font-size: 1.5em;
+        text-transform: none;
+        letter-spacing: 0;
+        border: none;
+        color: #313131;
+        margin: 0;
+        padding: 0;
+      }
+      .contact-options {
+        display: flex;
+      }
+      .one-third {
+        width: 222px;
+        padding: 10px;
+      }
+      .video-info {
+        padding: 20px;
+        padding-left: 10px;
+      }
+      /* right column container */
+      .article-container {
+        padding-top: 10px;
+        padding-bottom: 0px;
+        padding-left: 0px;
+        padding-top: 50px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .expand a {
+        float: right;
+      }
+      li {
+        font-size: 17px;
+      }
+
+      /* Links  */
+      .articles a {
+        text-decoration: none;
+      }
+
+      .articles a:hover {
+        color: #d52327;
+      }
+
+      a {
+        color: #a73e3f;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: #d52327;
+        text-decoration: underline;
+      }
+
+      /* List  */
+      li {
+        padding-bottom: 15px;
+      }
+      .articles {
+        list-style: none !important;
+        padding-left: 0px;
+      }
+
+      /* Forms */
+      form {
+        display: block;
+        margin-top: 0em;
+        margin-block-end: 1em;
+      }
+      .p-10-0 {
+        padding: 10px 0;
+      }
+      .p-l-10 {
+        padding-left: 10px;
+      }
+      .button {
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+        padding: 10px;
+        background: #bd1f23;
+        color: #fff;
+      }
+      .button:hover {
+        background-color: #d52327;
+        cursor: pointer;
+      }
+
+      .contact-options-font {
+        font-size: 19px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- HEADER -->
+      <!-- <header> -->
+      <!-- </header> -->
+      <!-- END HEADER -->
+      <div class="container">
+        <div class="row">
+          <!-- LEFT COLUMN -->
+          <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 p-5">
+            <div>
+              <h4 class="pb-2">
+                Design is a Team Sport
+              </h4>
+            </div>
+
+            <div class="pb-3">
+              <div style="padding:56.25% 0 0 0;position:relative;">
+                <iframe
+                  src="https://player.vimeo.com/video/162872494"
+                  style="position:absolute;top:0;left:0;width:100%;height:100%;"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
+            </div>
+            <div class="pt-2">
+              <p>
+                Every seasoned designer has fallen into the trap. They see the
+                bad design in front of them. They can’t help but see how bad it
+                is. And they want to redesign it. Show the world how it could be
+                done. How it should be done.
+              </p>
+              <p>
+                Well-intentioned as the desire to rid the world of this bad
+                design is, their approach often is a disaster. It pushes their
+                allies away, accidentally giving off the air of superiority
+                filled with the smells of arrogance and contempt.
+              </p>
+              <p>
+                An alternative is a well-designed process for creating your
+                designs. The secret sauce in that well-designed process is a
+                realization and inclusiveness of everyone on the team. It’s
+                infused with an understanding of how people contribute to the
+                design process, even when they aren’t trained in design skills.
+                And it opens up opportunities to give everyone—not just your
+                trained designers—the superpowers necessary to rid your products
+                and services of bad design.
+              </p>
+              <p>
+                This talk will inspire you and your team to:
+              </p>
+              <ul>
+                <li>
+                  Realize the reason everyone thinks they are a designer is they
+                  are a designer, however unskilled
+                </li>
+                <li>
+                  Learn that our design processes need to be designed, with
+                  intention and thoughtfulness
+                </li>
+                <li>
+                  Focus on helping every contributing influencer of your designs
+                  become a consciously competent designer themselves
+                </li>
+              </ul>
+              <p class="font-italic pl-2">
+                This talk is 45 minutes (60 minutes with Q&A). A 30 min version
+                is also available.
+              </p>
+            </div>
+
+            <!-- START CONTACT CONTAINER -->
+            <div class="contact-container p-4">
+              <h5>
+                Want Jared to give this talk? Let's Chat
+              </h5>
+              <p class="pt-2">
+                Contact us. We'll set up a call with you to discuss
+                availability, rates, anwser any questions you have, and if
+                you're ready for the awesomness–schedule a date for Jared's
+                visit.
+              </p>
+
+              <div class="contact-options row px-3">
+                <div class="one-third column col-md">
+                  <span class="center">
+                    <p>
+                      <a
+                        class="center contact-options-font"
+                        href="https://reg.uie.com/feedback"
+                        >Contact Us</a
+                      >
+                    </p>
+                  </span>
+                  <p>Contact us online.</p>
+                </div>
+                <div class="one-third column col-md">
+                  <span class="center ">
+                    <p class="contact-options-font">(800) 588-9855</p>
+                  </span>
+                  <p>Within the U.S. & Canada.</p>
+                </div>
+                <div class="one-third column col-md">
+                  <span class="center">
+                    <p class="contact-options-font">
+                      +1 (978) 327-5561
+                    </p>
+                  </span>
+                  <p>Anywhere, worldwide.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- END CONTACT CONTAINER -->
+          </div>
+          <!-- END LEFT COLUMN -->
+          <!-- RIGHT COLUMN -->
+          <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <div class="right-column">
+              <div class="article-container">
+                <h5 class="pb-2">Related Content</h5>
+                <ul class="articles">
+                  <li>
+                    <a
+                      href="https://aycl.uie.com/virtual_seminars/Accessibility_through_User_Research?source=Test1sotd"
+                      >Understanding the Kano Model – A Tool for Sophisticated
+                      Designers</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://aycl.uie.com/virtual_seminars/Accessibility_through_User_Research?source=Test1sotd"
+                      >Building a Winning UX Strategy Using the Kano Model</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://aycl.uie.com/virtual_seminars/Accessibility_through_User_Research?source=Test1sotd"
+                      >Pleasure, Flow, and Meaning - The 3 Approaches to
+                      Designing for Delight</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <hr/ >
+
+              <div class="signup-container">
+                <h5 class="pb-2">UX Strategy with Jared Spool</h5>
+
+                <div>
+                  <p>
+                    Want to improve your organization's UX strategy? Subscribe
+                    to our new newsletter UX Strategy with Jared Spool. Learn
+                    how successful organizations have made UX strategic through
+                    research, articles, and advice sent straight to your inbox.
+                  </p>
+                </div>
+                <div class="form-section" id="form">
+                  <form
+                    class="newsletter"
+                    action="https://reg.uie.com/newsletter"
+                    method="post"
+                  >
+                    <div>
+                      <div class="p-10-0">
+                        <label for="email"><strong>First Name:</strong></label>
+                        <input
+                          class="w-100 p-10-0 p-l-10"
+                          type="text"
+                          name="fname"
+                          id="fname"
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <!--
+                    <div class="p-10-0">
+                      <label for="email"><strong>Last Name:</strong></label>
+                      <input class="w-100 p-10-0 p-l-10" type="text" name="lname" id="lname" placeholder="Last Name">
+                    </div> -->
+                      <input
+                        type="hidden"
+                        name="lname"
+                        id="lname"
+                        placeholder="Last Name"
+                      />
+                      <div class="p-10-0 ">
+                        <label for="email"
+                          ><strong>Email Address:</strong></label
+                        >
+                        <input
+                          class="w-100 p-10-0 p-l-10"
+                          type="email"
+                          name="email"
+                          id="email"
+                          placeholder="Email"
+                          required=""
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <!--input id="signup-btn" class="w-100 btn" type="submit" value="Sign up for UX Strategy with Jared Spool" >-->
+                      <button
+                        type="submit"
+                        id="signup-btn"
+                        class="w-100 button"
+                      >
+                        Sign up for the Newsletter
+                      </button>
+                    </div>
+
+                    <input
+                      type="hidden"
+                      id="listid"
+                      name="listid"
+                      value="382de78e4c"
+                    />
+                    <input
+                      type="hidden"
+                      id="interestid"
+                      name="interestid"
+                      value="b2e886c648"
+                    />
+                    <input
+                      type="hidden"
+                      name="successurl"
+                      value="https://www.centercentre-uie.com/uxstrategy/signup/#success"
+                    />
+                    <input
+                      type="hidden"
+                      name="directsignup"
+                      value="https://mailchi.mp/uie.com/uxstrategy"
+                    />
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- END RIGHT COLUMN -->
+        </div>
+      </div>
+      <!-- START FOOTER -->
+      <!-- <footer class="global">
+
+      </footer> -->
+      <!-- END OF FOOTER -->
+    </div>
+    <!-- end of wrapper -->
+  </body>
+</html>
