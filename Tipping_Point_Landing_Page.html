@@ -32,13 +32,6 @@
         }
       }
 
-      .live-page {
-        padding: 0px;
-        margin: 0 auto;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-      }
-
       .main-container {
         display: flex;
         padding-right: 76px;
@@ -50,10 +43,7 @@
         /* padding-left: 150px; */
         padding-top: 20px;
       }
-      .right-column {
-        padding: 20px;
-        width: 100%;
-      }
+
       /* left column container */
       .video-container {
         padding: 0px;
@@ -104,17 +94,25 @@
       .p-l-10 {
         padding-left: 10px;
       }
-      .button {
-        font-size: 16px;
-        font-weight: 700;
-        border: none;
-        padding: 10px;
-        background: #bd1f23;
-        color: #fff;
+      .video-newsletter-submit-button {
+        justify-content: center;
       }
-      .button:hover {
-        background-color: #d52327;
-        cursor: pointer;
+
+      .video-newsletter-submit-button p {
+        padding-bottom: 4em;
+      }
+
+      .newsletter-container {
+        max-width: 870px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .email-box {
+        padding: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        -webkit-font-smoothing: antialiased;
       }
 
     </style>
@@ -212,95 +210,58 @@
               <!-- END CONTACT CONTAINER -->
               <hr/ >
 
-              <div class="signup-container">
-                <h5>UX Strategy with Jared Spool</h5>
-
-                <div>
-                  <p>
-                    Want to improve your organization's UX strategy? Subscribe
-                    to our new newsletter UX Strategy with Jared Spool. Learn
-                    how successful organizations have made UX strategic through
-                    research, articles, and advice sent straight to your inbox.
-                  </p>
-                </div>
-                <div class="form-section" id="form">
-                  <form
-                    class="newsletter"
-                    action="https://reg.uie.com/newsletter"
-                    method="post"
-                  >
-                    <div>
-                      <div class="p-10-0">
-                        <label for="email"><strong>First Name:</strong></label>
-                        <input
-                          class="w-100 p-10-0 p-l-10"
-                          type="text"
-                          name="fname"
-                          id="fname"
-                          placeholder="First Name"
-                        />
+              <section class="newsletter-container email-box" id="subscribe">
+                <form class="newsletter" action="https://reg.uie.com/newsletter/" method="post">
+                  <h5>Want to improve your organization’s UX strategy?</h5>
+                  <div class="p" id="success">Subscribe to our new newsletter <em>UX Strategy with Jared Spool</em>. Learn how successful organizations have made UX strategic through research, articles, and advice sent straight to your inbox.
+                  </div>
+                  <div id="form">
+                    <div class="row">
+                      <div class="six column">
+                        <label for="email" class="sr-only">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required="">
                       </div>
-                      <!--
-                    <div class="p-10-0">
-                      <label for="email"><strong>Last Name:</strong></label>
-                      <input class="w-100 p-10-0 p-l-10" type="text" name="lname" id="lname" placeholder="Last Name">
-                    </div> -->
-                      <input
-                        type="hidden"
-                        name="lname"
-                        id="lname"
-                        placeholder="Last Name"
-                      />
-                      <div class="p-10-0 ">
-                        <label for="email"
-                          ><strong>Email Address:</strong></label
-                        >
-                        <input
-                          class="w-100 p-10-0 p-l-10"
-                          type="email"
-                          name="email"
-                          id="email"
-                          placeholder="Email"
-                          required=""
-                        />
+                      <div class="field six column">
+                        <label for="fname" class="sr-only">First Name</label>
+                        <input type="text" name="fname" id="fname" placeholder="First Name">
                       </div>
+                      <!--<div class="four column">
+                        <label for="lname" class="sr-only">Last Name</label>
+                        <input type="text" name="lname" id="lname" placeholder="Last Name">
+                      </div>-->
+                      <div class="location">
+                        <label for="location" class="sr-only">Location</label>
+                        <input type="text" name="location" id="location" placeholder="Location">
+                      </div>
+                      <input type="hidden" name="lname" id="lname" placeholder="Last Name">
                     </div>
 
-                    <div>
-                      <button
-                        type="submit"
-                        id="signup-btn"
-                        class="w-100 button"
-                      >
-                        Sign up for the Newsletter
-                      </button>
+                    <div class="field row last video-newsletter-submit-button">
+                      <p class="small promise">
+                        <strong>CenterCentre – UIE values your privacy.</strong><br>
+                        We will never sell your email address.
+                      </p>
+
+                      <input type="submit" value="Sign Me Up">
                     </div>
 
-                    <input
-                      type="hidden"
-                      id="listid"
-                      name="listid"
-                      value="382de78e4c"
-                    />
-                    <input
-                      type="hidden"
-                      id="interestid"
-                      name="interestid"
-                      value="b2e886c648"
-                    />
-                    <input
-                      type="hidden"
-                      name="successurl"
-                      value="https://www.centercentre-uie.com/uxstrategy/signup/#success"
-                    />
-                    <input
-                      type="hidden"
-                      name="directsignup"
-                      value="https://mailchi.mp/uie.com/uxstrategy"
-                    />
-                  </form>
-                </div>
-              </div>
+                    <input type="hidden" id="listid" name="listid" value="382de78e4c">
+                    <input type="hidden" id="interestid" name="interestid" value="b2e886c648">
+                    <input type="hidden" name="successurl" value="https://uie.com#success">
+                    <input type="hidden" name="directsignup" value="https://mailchi.mp/uie.com/uxstrategy">
+                  </div>
+
+                  <style>
+                    #successMessage {display: none;}
+                    .p {margin-bottom:.5em;}
+                  </style>
+
+                  <div id="successMessage">
+                    <p>Success! You've been added.</p>
+                    <p>Thank you for subscribing to <em>UX Strategy with Jared Spool.</em></p>
+                  </div>
+                </form>
+              </section>
             </div>
           </div>
           <!-- END RIGHT COLUMN -->
