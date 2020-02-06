@@ -1,203 +1,194 @@
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      id="metaViewport"
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1"
-    />
-    <!-- <title>Sample Site</title> -->
-    <style>
+<head>
+  <style>
 
+    .flex-grid-thirds {
+      display: flex;
+      justify-content: space-between;
+    }
+    .flex-grid-thirds .left {
+      width: 64%;
+    }
+
+    .flex-grid-thirds .right {
+      width: 32%;
+    }
+
+    @media only screen and (max-width: 600px) {
       .flex-grid-thirds {
-        display: flex;
-        justify-content: space-between;
+        display: block;
       }
       .flex-grid-thirds .left {
-        width: 64%;
+        width: 100% !important;
+        margin: 0px !important;
       }
 
       .flex-grid-thirds .right {
-        width: 32%;
+        width: 100% !important;
+        margin: 0px !important;
       }
+    }
 
-      @media only screen and (max-width: 600px) {
-        .flex-grid-thirds {
-          display: block;
-        }
-        .flex-grid-thirds .left {
-          width: 100% !important;
-          margin: 0px !important;
-        }
+    .newsletter-container {
+      margin: 30px 0px;
+      padding: 0px;
+    }
 
-        .flex-grid-thirds .right {
-          width: 100% !important;
-          margin: 0px !important;
-        }
-      }
+    .newsletter h4 {
+      margin-top:0px;
+    }
 
-      .newsletter-container {
-        margin: 30px 0px;
-        padding: 0px;
-      }
+    .location {
+      left: -2000px;
+    }
 
-      .newsletter h4 {
-        margin-top:0px;
-      }
+    .video-page-vimeo {
+      margin: 10px 0px 20px 0px;
+      padding:56.25% 0 0 0;
+      position:relative;
+    }
 
-      .location {
-        left: -2000px;
-      }
+    .email-box input[type=submit] {
+      float: none;
+      margin-top: 1em;
+    }
 
-      .video-page-vimeo {
-        margin: 10px 0px 20px 0px;
-        padding:56.25% 0 0 0;
-        position:relative;
-      }
-
-      .email-box input[type=submit] {
-        float: none;
-        margin-top: 1em;
-      }
-
-    </style>
-  </head>
-  <body>
-    <div class="live-page">
-      <div class="flex-grid-thirds">
-        <!-- LEFT COLUMN -->
-        <div class="left">
-          <h3>
-            Beyond The UX Tipping Point
-          </h3>
+  </style>
+</head>
+<body>
+  <div class="live-page">
+    <div class="flex-grid-thirds">
+      <!-- LEFT COLUMN -->
+      <div class="left">
+        <h3>
+          Beyond The UX Tipping Point
+        </h3>
+        <p>
+          <em>This talk is 45 minutes (60 minutes with Q&A).</em>
+        </p>
+        <div>
+          <div class="video-page-vimeo">
+            <iframe
+              src="https://player.vimeo.com/video/164258612"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        <div>
           <p>
-            <em>This talk is 45 minutes (60 minutes with Q&A).</em>
+            <a href="https://www.uie.com/wp-assets/transcripts/beyond_the_ux_tipping_point.html" target="_blank">Video Transcript</a> | <a href="https://www.dropbox.com/s/rtyi9rzc9yez802/Beyond%20the%20UX%20Tipping%20Point%20-%20R3.pdf?dl%3D0=&sa=D&usg=AFQjCNHJ6ua5t_PGXrZ4Xo-OKAJpkwJKgg&ust=1528805337576000" target="_blank">Presentation Slides</a>
           </p>
-          <div>
-            <div class="video-page-vimeo">
-              <iframe
-                src="https://player.vimeo.com/video/164258612"
-                style="position:absolute;top:0;left:0;width:100%;height:100%;"
-                frameborder="0"
-                allow="autoplay; fullscreen"
-                allowfullscreen
-              ></iframe>
-            </div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
-          </div>
-          <div>
-            <p>
-              <a href="https://www.uie.com/wp-assets/transcripts/beyond_the_ux_tipping_point.html" target="_blank">Video Transcript</a> | <a href="https://www.dropbox.com/s/rtyi9rzc9yez802/Beyond%20the%20UX%20Tipping%20Point%20-%20R3.pdf?dl%3D0=&sa=D&usg=AFQjCNHJ6ua5t_PGXrZ4Xo-OKAJpkwJKgg&ust=1528805337576000" target="_blank">Presentation Slides</a>
-            </p>
-            <p>
-              For the longest time, making a great experience for the user was
-              a business-strategy luxury item. A great product only had to
-              work and ship. A great experience was a nice-to-have, not a
-              requirement. Times have changed. The cost of delivering a
-              product is no longer a barrier to entry. Quality is no longer a
-              differentiator. What’s left? The user’s experience.
-            </p>
-            <p>
-              Every part of the organization must be infused with an
-              understanding of great design. Your organization has to cross
-              the UX Tipping Point. You must increase everyone’s exposure to
-              users, communicate a solid experience vision, and install a
-              culture of continual learning. With that, design will become
-              your organization’s competitive advantage.
-            </p>
-            <p>
-              Jared will show you and your team:
-            </p>
-            <ul>
-              <li>
-                Which path organizations take to become design-infused
-              </li>
-              <li>
-                How a centralized UX team is a stepping stone to a more UX
-                capable organization
-              </li>
-              <li>
-                Why the market needs to demand a better experience before it
-                will matter
-              </li>
-              <li>
-                What your organization will need to do to cross the UX Tipping
-                Point
-              </li>
-            </ul>
-          </div>
+          <p>
+            For the longest time, making a great experience for the user was
+            a business-strategy luxury item. A great product only had to
+            work and ship. A great experience was a nice-to-have, not a
+            requirement. Times have changed. The cost of delivering a
+            product is no longer a barrier to entry. Quality is no longer a
+            differentiator. What’s left? The user’s experience.
+          </p>
+          <p>
+            Every part of the organization must be infused with an
+            understanding of great design. Your organization has to cross
+            the UX Tipping Point. You must increase everyone’s exposure to
+            users, communicate a solid experience vision, and install a
+            culture of continual learning. With that, design will become
+            your organization’s competitive advantage.
+          </p>
+          <p>
+            Jared will show you and your team:
+          </p>
+          <ul>
+            <li>
+              Which path organizations take to become design-infused
+            </li>
+            <li>
+              How a centralized UX team is a stepping stone to a more UX
+              capable organization
+            </li>
+            <li>
+              Why the market needs to demand a better experience before it
+              will matter
+            </li>
+            <li>
+              What your organization will need to do to cross the UX Tipping
+              Point
+            </li>
+          </ul>
         </div>
-        <!-- END LEFT COLUMN -->
-        <!-- RIGHT COLUMN -->
-
-        <div class="right">
-          <section class="newsletter-container">
-            <div class="newsletter">
-              <h4>Want Jared to give this talk? Let's chat!</h4>
-              <p>
-                <a href="https://reg.uie.com/feedback" target="_blank">Contact Us</a>. We'll set up a call with you to discuss
-                availability, rates, anwser any questions you have, and if
-                you're ready for the awesomness–schedule a date for Jared's
-                visit.
-              </p>
-            </div>
-          </section>
-
-          <section class="newsletter-container email-box" id="subscribe">
-            <form class="newsletter" action="https://reg.uie.com/newsletter/" method="post">
-              <h4>Want to improve your organization’s UX strategy?</h4>
-              <div class="p" id="success">Subscribe to our new newsletter <em>UX Strategy with Jared Spool</em>. Learn how successful organizations have made UX strategic through research, articles, and advice sent straight to your inbox.
-              </div>
-              <div id="form">
-                <div class="row">
-                  <div class="six column">
-                    <label for="email" class="sr-only">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Email" required="">
-                  </div>
-                  <div class="field six column">
-                    <label for="fname" class="sr-only">First Name</label>
-                    <input type="text" name="fname" id="fname" placeholder="First Name">
-                  </div>
-                  <!--<div class="four column">
-                    <label for="lname" class="sr-only">Last Name</label>
-                    <input type="text" name="lname" id="lname" placeholder="Last Name">
-                  </div>-->
-                  <div class="location">
-                    <label for="location" class="sr-only">Location</label>
-                    <input type="text" name="location" id="location" placeholder="Location">
-                  </div>
-                  <input type="hidden" name="lname" id="lname" placeholder="Last Name">
-                </div>
-
-                <div class="field row last">
-                  <p class="small promise">
-                    Center Centre &ndash; UIE values your privacy. We will never sell your email&nbsp;address.
-                  </p>
-
-                  <input type="submit" value="Sign me up">
-                </div>
-
-                <input type="hidden" id="listid" name="listid" value="382de78e4c">
-                <input type="hidden" id="interestid" name="interestid" value="b2e886c648">
-                <input type="hidden" name="successurl" value="https://uie.com#success">
-                <input type="hidden" name="directsignup" value="https://mailchi.mp/uie.com/uxstrategy">
-              </div>
-
-              <style>
-                #successMessage {display: none;}
-                .p {margin-bottom:.5em;}
-              </style>
-
-              <div id="successMessage">
-                <p>Success! You've been added.</p>
-                <p>Thank you for subscribing to <em>UX Strategy with Jared Spool.</em></p>
-              </div>
-            </form>
-          </section>
-
-        </div>
-        <!-- END RIGHT COLUMN -->
       </div>
+      <!-- END LEFT COLUMN -->
+      <!-- RIGHT COLUMN -->
+
+      <div class="right">
+        <section class="newsletter-container">
+          <div class="newsletter">
+            <h4>Want Jared to give this talk? Let's chat!</h4>
+            <p>
+              <a href="https://reg.uie.com/feedback" target="_blank">Contact Us</a>. We'll set up a call with you to discuss
+              availability, rates, anwser any questions you have, and if
+              you're ready for the awesomness–schedule a date for Jared's
+              visit.
+            </p>
+          </div>
+        </section>
+
+        <section class="newsletter-container email-box" id="subscribe">
+          <form class="newsletter" action="https://reg.uie.com/newsletter/" method="post">
+            <h4>Want to improve your organization’s UX strategy?</h4>
+            <div class="p" id="success">Subscribe to our new newsletter <em>UX Strategy with Jared Spool</em>. Learn how successful organizations have made UX strategic through research, articles, and advice sent straight to your inbox.
+            </div>
+            <div id="form">
+              <div class="row">
+                <div class="six column">
+                  <label for="email" class="sr-only">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Email" required="">
+                </div>
+                <div class="field six column">
+                  <label for="fname" class="sr-only">First Name</label>
+                  <input type="text" name="fname" id="fname" placeholder="First Name">
+                </div>
+                <!--<div class="four column">
+                  <label for="lname" class="sr-only">Last Name</label>
+                  <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>-->
+                <div class="location">
+                  <label for="location" class="sr-only">Location</label>
+                  <input type="text" name="location" id="location" placeholder="Location">
+                </div>
+                <input type="hidden" name="lname" id="lname" placeholder="Last Name">
+              </div>
+
+              <div class="field row last">
+                <p class="small promise">
+                  Center Centre &ndash; UIE values your privacy. We will never sell your email&nbsp;address.
+                </p>
+
+                <input type="submit" value="Sign me up">
+              </div>
+
+              <input type="hidden" id="listid" name="listid" value="382de78e4c">
+              <input type="hidden" id="interestid" name="interestid" value="b2e886c648">
+              <input type="hidden" name="successurl" value="https://uie.com#success">
+              <input type="hidden" name="directsignup" value="https://mailchi.mp/uie.com/uxstrategy">
+            </div>
+
+            <style>
+              #successMessage {display: none;}
+              .p {margin-bottom:.5em;}
+            </style>
+
+            <div id="successMessage">
+              <p>Success! You've been added.</p>
+              <p>Thank you for subscribing to <em>UX Strategy with Jared Spool.</em></p>
+            </div>
+          </form>
+        </section>
+
+      </div>
+      <!-- END RIGHT COLUMN -->
     </div>
-  </body>
-</html>
+  </div>
+</body>
