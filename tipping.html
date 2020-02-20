@@ -13,40 +13,18 @@
       width: 32%;
     }
 
-    @media only screen and (max-width: 500px) {
-      .flex-grid-thirds {
-        display: block;
-      }
-      .flex-grid-thirds .left {
-        width: 100% !important;
-        margin: 0px !important;
-      }
-
-      .flex-grid-thirds .right {
-        width: 100% !important;
-        margin: 0px !important;
-      }
-
-      .newsletter, .card {
-        border-radius: 4px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
-        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
-      }
-    }
-
     .newsletter-container {
-      margin: 10px 0px 20px 0px;
-      padding: 0px;
+      margin: .5em 0em 1em 0em;
+      padding: 0em;
     }
 
     .newsletter h4 {
-      margin-top:0px;
+      margin-top:0em;
     }
 
     .six.column {
       margin: 1em 0 0;
-      width: auto;
+      width: 100%;
     }
 
     .location {
@@ -54,7 +32,7 @@
     }
 
     .video-page-vimeo {
-      margin: 10px 0px 20px 0px;
+      margin: .5em 0em 1em 0em;
       padding:56.25% 0 0 0;
       position:relative;
     }
@@ -65,7 +43,7 @@
     }
 
     .product-stage {
-      padding: 0px;
+      padding: 0em;
     }
 
     .card {
@@ -76,12 +54,60 @@
       color: #3BA7C9;
     }
 
+    @media only screen and (max-width: 860px) {
+      .flex-grid-thirds {
+        display: block;
+      }
+
+      .flex-grid-thirds .left {
+        width: 100%;
+      }
+
+      .flex-grid-thirds .right {
+        width: 100%;
+      }
+
+      .newsletter-container {
+        max-width: 860px;
+      }
+
+      .six.column {
+        margin: 1em 1em 0em 0em;
+        width: 45%;
+      }
+
+      .product-stage {
+        background-color: unset;
+      }
+
+      .txt-center {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .flex-grid-thirds .right {
+        width: 100%;
+      }
+
+      .newsletter, .card {
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+      }
+
+      .six.column {
+        width: 100%;
+      }
+    }
+
   </style>
 </head>
 <body>
   <div class="live-page">
     <div>
-      <h1>
+      <h1 class="txt-center">
         Beyond The UX Tipping&nbsp;Point
       </h1>
     </div>
@@ -102,7 +128,7 @@
         </div>
         <div>
           <p>
-            <em>This talk is 45 minutes (60 minutes with&nbsp;Q&amp;A).</em>
+            <em>This talk is 77&nbsp;minutes.</em>
           </p>
           <p>
             <a href="https://www.uie.com/wp-assets/transcripts/beyond_the_ux_tipping_point.html" target="_blank">Video Transcript</a> | <a href="https://www.dropbox.com/s/rtyi9rzc9yez802/Beyond%20the%20UX%20Tipping%20Point%20-%20R3.pdf?dl%3D0=&sa=D&usg=AFQjCNHJ6ua5t_PGXrZ4Xo-OKAJpkwJKgg&ust=1528805337576000" target="_blank">Presentation&nbsp;Slides</a>
@@ -213,7 +239,7 @@
       </div>
       <!-- END RIGHT COLUMN -->
     </div>
-      <h4>
+      <h4 class="txt-center">
         Want to learn more about the UX Tipping&nbsp;Point?
       </h4>
       <div class="product-stage">
