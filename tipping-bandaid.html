@@ -1,0 +1,276 @@
+<head>
+  <style>
+
+    .flex-grid-thirds {
+      display: flex;
+      justify-content: space-between;
+    }
+    .flex-grid-thirds .left {
+      width: 64%;
+    }
+
+    .flex-grid-thirds .right {
+      width: 32%;
+    }
+
+    .newsletter-container {
+      margin: .5em 0em 1em 0em;
+      padding: 0em;
+    }
+
+    .newsletter h4 {
+      margin-top:0em;
+    }
+
+    .six.column {
+      margin: 1em 0 0;
+      width: 100%;
+    }
+
+    .location {
+      left: -2000px;
+    }
+
+    .video-page-vimeo {
+      margin: .5em 0em 1em 0em;
+      padding:56.25% 0 0 0;
+      position:relative;
+    }
+
+    .email-box input[type=submit] {
+      float: none;
+      margin-top: 1em;
+    }
+
+    .product-stage {
+      padding: 0em;
+    }
+
+    .card {
+      margin: 1em 0em;
+    }
+
+    a {
+      color: #3BA7C9;
+    }
+
+    @media only screen and (max-width: 860px) {
+      .flex-grid-thirds {
+        display: block;
+      }
+
+      .flex-grid-thirds .left {
+        width: 100%;
+      }
+
+      .flex-grid-thirds .right {
+        width: 100%;
+      }
+
+      .newsletter-container {
+        max-width: 860px;
+      }
+
+      .six.column {
+        margin: 1em 1em 0em 0em;
+        width: 45%;
+      }
+
+      .product-stage {
+        background-color: unset;
+      }
+
+      .txt-center {
+        text-align: center;
+      }
+    }
+
+    @media only screen and (max-width: 500px) {
+      .flex-grid-thirds .right {
+        width: 100%;
+      }
+
+      .newsletter, .card {
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+      }
+
+      .six.column {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="live-page">
+    <div>
+      <h1 class="txt-center">
+        Beyond The UX Tipping&nbsp;Point
+      </h1>
+    </div>
+    <div class="flex-grid-thirds">
+      <!-- LEFT COLUMN -->
+      <div class="left">
+        <div>
+          <div class="video-page-vimeo">
+            <iframe
+              src="https://player.vimeo.com/video/164258612"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              frameborder="0"
+              allow="autoplay; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <script src="https://player.vimeo.com/api/player.js"></script>
+        </div>
+        <div>
+          <p>
+            <em>This talk is 77&nbsp;minutes.</em>
+          </p>
+          <p>
+            <a href="https://www.uie.com/wp-assets/transcripts/beyond_the_ux_tipping_point.html" target="_blank">Video Transcript</a> | <a href="https://asset.uie.com/slides/beyond_the_ux_tipping_point.pdf" target="_blank">Presentation&nbsp;Slides</a>
+          </p>
+          <p>
+            For the longest time, making a great experience for the user was
+            a business-strategy luxury item. A great product only had to
+            work and ship. A great experience was a nice-to-have, not a
+            requirement. Times have changed. The cost of delivering a
+            product is no longer a barrier to entry. Quality is no longer a
+            differentiator. What&rsquo;s left? The user&rsquo;s experience.
+          </p>
+          <p>
+            Every part of the organization must be infused with an
+            understanding of great design. Your organization has to cross
+            the UX Tipping Point. You must increase everyone&rsquo;s exposure to
+            users, communicate a solid experience vision, and install a
+            culture of continual learning. With that, design will become
+            your organization&rsquo;s competitive advantage.
+          </p>
+          <p>
+            Jared will show you and your&nbsp;team:
+          </p>
+          <ul>
+            <li>
+              Which path organizations take to become design-infused
+            </li>
+            <li>
+              How a centralized UX team is a stepping stone to a more UX
+              capable organization
+            </li>
+            <li>
+              Why the market needs to demand a better experience before it
+              will matter
+            </li>
+            <li>
+              What your organization will need to do to cross the UX Tipping
+              Point
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- END LEFT COLUMN -->
+      <!-- RIGHT COLUMN -->
+
+      <div class="right">
+        <section class="newsletter-container">
+          <div class="newsletter">
+            <h4>Want Jared to give this talk? Let&apos;s&nbsp;chat!</h4>
+            <p>
+              <a href="https://reg.uie.com/feedback" target="_blank">Contact us</a>. We&apos;ll set up a call with you to discuss availability, rates, anwser any questions you have, and if you&apos;re ready for the awesomness&ndash;schedule a date for Jared&apos;s&nbsp;visit.
+            </p>
+          </div>
+        </section>
+
+        <section class="newsletter-container email-box" id="subscribe">
+          <form class="newsletter" action="https://reg.uie.com/newsletter/" method="post">
+            <h4>Want to improve your organization&rsquo;s UX&nbsp;strategy?</h4>
+            <div class="p" id="success">Subscribe to our new newsletter <em>UX Strategy with Jared Spool</em>. Learn how successful organizations have made UX strategic through research, articles, and advice sent straight to your&nbsp;inbox.
+            </div>
+            <div id="form">
+              <div class="row">
+                <div class="six column">
+                  <label for="email" class="sr-only">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Email" required="">
+                </div>
+                <div class="field six column">
+                  <label for="fname" class="sr-only">First Name</label>
+                  <input type="text" name="fname" id="fname" placeholder="First Name">
+                </div>
+                <!--<div class="four column">
+                  <label for="lname" class="sr-only">Last Name</label>
+                  <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>-->
+                <div class="location">
+                  <label for="location" class="sr-only">Location</label>
+                  <input type="text" name="location" id="location" placeholder="Location">
+                </div>
+                <input type="hidden" name="lname" id="lname" placeholder="Last Name">
+              </div>
+
+              <div class="field row last">
+                <p class="small promise">
+                  Center Centre &ndash; UIE values your privacy. We will never sell your email&nbsp;address.
+                </p>
+
+                <input type="submit" value="Sign Me Up">
+              </div>
+
+              <input type="hidden" id="listid" name="listid" value="382de78e4c">
+              <input type="hidden" id="interestid" name="interestid" value="b2e886c648">
+              <input type="hidden" name="successurl" value="https://uie.com#success">
+              <input type="hidden" name="directsignup" value="https://mailchi.mp/uie.com/uxstrategy">
+            </div>
+
+            <style>
+              #successMessage {display: none;}
+              .p {margin-bottom:.5em;}
+            </style>
+
+            <div id="successMessage">
+              <p>Success! You've been added.</p>
+              <p>Thank you for subscribing to <em>UX Strategy with Jared Spool.</em></p>
+            </div>
+          </form>
+        </section>
+
+      </div>
+      <!-- END RIGHT COLUMN -->
+    </div>
+      <h4 class="txt-center">
+        Want to learn more about the UX Tipping&nbsp;Point?
+      </h4>
+      <div class="product-stage">
+        <div class="card">
+          <a href="https://articles.uie.com/beyond_ux_tipping_point/" target="_blank">
+            <div class="card-body">
+              <p><strong>Beyond the UX Tipping&nbsp;Point</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://articles.uie.com/driving-product-teams-to-become-more-design-mature/" target="_blank">
+            <div class="card-body">
+              <p><strong>Driving Product Teams To Become More Design&nbsp;Mature</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://playbook.uie.com/blog/increasing-an-organization-s-ux-design-maturity-our-not-so-secret-sauce" target="_blank">
+            <div class="card-body">
+              <p><strong>Increasing an Organization&rsquo;s UX Design Maturity: Our Not-So-Secret&nbsp;Sauce</strong></p>
+            </div>
+          </a>
+        </div>
+        <div class="card">
+          <a href="https://articles.uie.com/assessing_ux_teams/" target="_blank">
+            <div class="card-body">
+              <p><strong>Assessing Your Team&rsquo;s UX&nbsp;Skills</strong></p>
+            </div>
+          </a>
+        </div>
+      </div>
+  </div>
+</body>
