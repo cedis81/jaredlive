@@ -3,14 +3,21 @@
 
     .flex-grid-thirds {
       display: flex;
+      flex-wrap:wrap;
       justify-content: space-between;
     }
     .flex-grid-thirds .left {
       width: 64%;
+      order: 0;
     }
 
     .flex-grid-thirds .right {
       width: 32%;
+      order: 1;
+    }
+
+    .flex-grid-thirds .related-articles {
+      order: 2;
     }
 
     .newsletter-container {
@@ -67,15 +74,22 @@
     }
 
     @media only screen and (max-width: 860px) {
-      .flex-grid-thirds {
+      /* .flex-grid-thirds {
         display: block;
-      }
+      } */
 
       .flex-grid-thirds .left {
+        order: 0;
         width: 100%;
       }
 
       .flex-grid-thirds .right {
+        order: 2;
+        width: 100%;
+      }
+
+      .flex-grid-thirds .related-articles {
+        order: 1;
         width: 100%;
       }
 
@@ -182,7 +196,7 @@
             <a href="https://www.uie.com/wp-assets/transcripts/beyond_the_ux_tipping_point.html" target="_blank">Video Transcript</a> | <a href="https://asset.uie.com/slides/beyond_the_ux_tipping_point.pdf" target="_blank">Presentation&nbsp;Slides</a>
           </p>
           <p>
-            In this presentation, Jared&nbsp;shared:
+            In this presentation, Jared&nbsp;shares:
           </p>
           <ul>
             <li>
@@ -261,67 +275,71 @@
 
       </div>
       <!-- END RIGHT COLUMN -->
-    </div>
-      <h4 class="txt-center">
-        Want to learn more? Check out these&nbsp;articles:
-      </h4>
-      <div class="product-stage">
-        <div class="card">
-          <a href="https://articles.uie.com/beyond_ux_tipping_point/" target="_blank" class="article-title">
-            <div class="card-body">
-              <p><strong>Beyond the UX Tipping&nbsp;Point</strong></p>
-            </div>
-            <p class="by-line">By: Jared M.&nbsp;Spool</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://articles.uie.com/driving-product-teams-to-become-more-design-mature/" target="_blank" class="article-title">
-            <div class="card-body">
-              <p><strong>Driving Product Teams To Become More Design&nbsp;Mature</strong></p>
-            </div>
-            <p class="by-line">By: Jared M.&nbsp;Spool</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://playbook.uie.com/blog/increasing-an-organization-s-ux-design-maturity-our-not-so-secret-sauce" target="_blank" class="article-title">
-            <div class="card-body">
-              <p><strong>Increasing an Organization&rsquo;s UX Design Maturity: Our Not-So-Secret&nbsp;Sauce</strong></p>
-            </div>
-            <p class="by-line">By: Jared M.&nbsp;Spool</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://articles.uie.com/design_infused/" target="_blank" class="article-title">
-            <div class="card-body">
-              <p><strong>Preparing Organizations to Become Design-Infused</strong></p>
-            </div>
-            <p class="by-line">By: Jared M.&nbsp;Spool</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://articles.uie.com/user_exposure_hours/" target="_blank" class="article-title">
-            <div class="card-body">
-              <p><strong>Fast Path to a Great UX &ndash; Increased Exposure&nbsp;Hours</strong></p>
-            </div>
-            <p class="by-line">By: Jared M.&nbsp;Spool</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://articles.uie.com/the-experience-vision-a-self-fulfilling-ux-strategy/" target="_blank" class="article-title">
-            <div class="card-body">
-              <p><strong>The Experience Vision: A Self-Fulfilling UX&nbsp;Strategy</strong></p>
-            </div>
-            <p class="by-line">By: Jared M.&nbsp;Spool</p>
-          </a>
-        </div>
-        <div class="card">
-          <a href="https://articles.uie.com/teaching-ux-designers-to-always-be-learning/" target="_blank" class="article-title">
-            <div class="card-body">
-              <p><strong>Teaching UX Designers to Always Be&nbsp;Learning</strong></p>
-            </div>
-            <p class="by-line">By: Jared M.&nbsp;Spool</p>
-          </a>
+      <!-- RELATED ARTICLES -->
+      <div class="related-articles">
+        <h4 class="txt-center">
+          Want to learn more? Check out these&nbsp;articles:
+        </h4>
+        <div class="product-stage">
+          <div class="card">
+            <a href="https://articles.uie.com/beyond_ux_tipping_point/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Beyond the UX Tipping&nbsp;Point</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/driving-product-teams-to-become-more-design-mature/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Driving Product Teams To Become More Design&nbsp;Mature</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://playbook.uie.com/blog/increasing-an-organization-s-ux-design-maturity-our-not-so-secret-sauce" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Increasing an Organization&rsquo;s UX Design Maturity: Our Not-So-Secret&nbsp;Sauce</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/design_infused/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Preparing Organizations to Become Design-Infused</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/user_exposure_hours/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Fast Path to a Great UX &ndash; Increased Exposure&nbsp;Hours</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/the-experience-vision-a-self-fulfilling-ux-strategy/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>The Experience Vision: A Self-Fulfilling UX&nbsp;Strategy</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/teaching-ux-designers-to-always-be-learning/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Teaching UX Designers to Always Be&nbsp;Learning</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
         </div>
       </div>
+      <!-- END RELATED ARTICLES -->
+    </div>
   </div>
 </body>
