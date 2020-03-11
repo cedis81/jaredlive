@@ -1,0 +1,343 @@
+<head>
+  <style>
+
+    .flex-grid-thirds {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+    }
+    .flex-grid-thirds .left {
+      width: 64%;
+      order: 0;
+    }
+
+    .flex-grid-thirds .right {
+      width: 32%;
+      order: 1;
+    }
+
+    .flex-grid-thirds .related-articles {
+      order: 2;
+    }
+
+    .newsletter-container {
+      margin: .5em 0em 1em 0em;
+      padding: 0em;
+    }
+
+    .newsletter h4 {
+      margin-top:0em;
+    }
+
+    .six.column {
+      margin: 1em 0 0;
+      width: 100%;
+    }
+
+    .location {
+      left: -2000px;
+    }
+
+    .video-page {
+      margin: .5em 0em 1em 0em;
+      padding:56.25% 0 0 0;
+      position:relative;
+    }
+
+    .email-box input[type=submit] {
+      float: none;
+      margin-top: 1em;
+    }
+
+    .product-stage {
+      padding: 0em;
+    }
+
+    .card {
+      margin: 1em 0em;
+    }
+
+    a {
+      color: #3BA7C9;
+    }
+
+    .article-title {
+      height: 8em;
+      position: relative;
+    }
+
+    .by-line {
+      color: #313131;
+      position: absolute;
+      top: 5.4em;
+      left: 1.5em;
+    }
+
+    @media only screen and (max-width: 860px) {
+
+      .flex-grid-thirds .left {
+        order: 0;
+        width: 100%;
+      }
+
+      .flex-grid-thirds .right {
+        order: 2;
+        width: 100%;
+      }
+
+      .flex-grid-thirds .related-articles {
+        order: 1;
+        width: 100%;
+      }
+
+      .newsletter-container {
+        max-width: 860px;
+      }
+
+      .six.column {
+        margin: 1em 1em 0em 0em;
+        width: 45%;
+      }
+
+      .product-stage {
+        background-color: unset;
+      }
+
+      .txt-center {
+        text-align: center;
+      }
+
+      .article-title {
+        height: 7em;
+        position: relative;
+      }
+
+      .by-line {
+        color: #313131;
+        position: absolute;
+        top: 4em;
+        left: 1.5em;
+      }
+
+    }
+
+    @media only screen and (max-width: 500px) {
+      .flex-grid-thirds .right {
+        width: 100%;
+      }
+
+      .newsletter, .card {
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+      }
+
+      .six.column {
+        width: 100%;
+      }
+
+      .article-title {
+        height: 9em;
+        position: relative;
+      }
+
+      .by-line {
+        color: #313131;
+        position: absolute;
+        top: 6em;
+        left: 1.5em;
+      }
+    }
+
+    @media only screen and (max-width: 360px) {
+      .article-title {
+        height: 10em;
+        position: relative;
+      }
+
+      .by-line {
+        color: #313131;
+        position: absolute;
+        top: 7em;
+        left: 1.5em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="live-page">
+    <div>
+      <h1 class="txt-center">
+        Building a Winning UX Strategy Using the Kano&nbsp;Model
+      </h1>
+    </div>
+    <div class="flex-grid-thirds">
+      <!-- LEFT COLUMN -->
+      <div class="left">
+        <div>
+          <div class="video-page">
+            <iframe
+              src="https://player.vimeo.com/video/140302789"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              frameborder="0"
+              allow="autoplay; encrypted-media; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div>
+          <p>
+            <a href="https://www.uie.com/wp-assets/transcripts/building_a_winning_ux_strategy.html" target="_blank">Video Transcript</a> | <a href="https://asset.uie.com/slides/beyond_the_ux_tipping_point.pdf" target="_blank">Presentation&nbsp;Slides</a>
+          </p>
+          <p>
+            In this presentation, Jared&nbsp;shares:
+          </p>
+          <ul>
+            <li>
+              How to identify your customers’ basic expectations
+            </li>
+            <li>
+              How adding features today creates more work for teams downstream
+            </li>
+            <li>
+              How to focus the team on real customer problems, avoiding the problem of experience rot
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- END LEFT COLUMN -->
+      <!-- RIGHT COLUMN -->
+
+      <div class="right">
+        <section class="newsletter-container email-box" id="subscribe">
+          <form class="newsletter" action="https://reg.uie.com/newsletter/" method="post">
+            <h4>Want to improve your organization&rsquo;s UX&nbsp;strategy?</h4>
+            <div class="p" id="success">Subscribe to our new newsletter <em>UX Strategy with Jared Spool</em>. Learn how successful organizations have made UX strategic through research, articles, and advice sent straight to your&nbsp;inbox.
+            </div>
+            <div id="form">
+              <div class="row">
+                <div class="six column">
+                  <label for="email" class="sr-only">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Email" required="">
+                </div>
+                <div class="field six column">
+                  <label for="fname" class="sr-only">First Name</label>
+                  <input type="text" name="fname" id="fname" placeholder="First Name">
+                </div>
+                <!--<div class="four column">
+                  <label for="lname" class="sr-only">Last Name</label>
+                  <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>-->
+                <div class="location">
+                  <label for="location" class="sr-only">Location</label>
+                  <input type="text" name="location" id="location" placeholder="Location">
+                </div>
+                <input type="hidden" name="lname" id="lname" placeholder="Last Name">
+              </div>
+
+              <div class="field row last">
+                <p class="small promise">
+                  Center Centre &ndash; UIE values your privacy. We will never sell your email&nbsp;address.
+                </p>
+
+                <input type="submit" value="Sign Me Up">
+              </div>
+
+              <input type="hidden" id="listid" name="listid" value="382de78e4c">
+              <input type="hidden" id="interestid" name="interestid" value="b2e886c648">
+              <input type="hidden" name="successurl" value="https://uie.com#success">
+              <input type="hidden" name="directsignup" value="https://mailchi.mp/uie.com/uxstrategy">
+            </div>
+
+            <style>
+              #successMessage {display: none;}
+              .p {margin-bottom:.5em;}
+            </style>
+
+            <div id="successMessage">
+              <p>Success! You've been added.</p>
+              <p>Thank you for subscribing to <em>UX Strategy with Jared Spool.</em></p>
+            </div>
+          </form>
+        </section>
+
+      </div>
+      <!-- END RIGHT COLUMN -->
+      <!-- RELATED ARTICLES -->
+      <div class="related-articles">
+        <h4 class="txt-center">
+          Want to learn more? Check out these&nbsp;articles:
+        </h4>
+        <div class="product-stage">
+          <div class="card">
+            <a href="https://articles.uie.com/kano_model/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Understanding the Kano Model &ndash; A Tool for Sophisticated&nbsp;Designers</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://playbook.uie.com/blog/baking-innovation-into-your-design-process" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Baking Innovation Into Your Design&nbsp;Process</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/experience_rot/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Experience&nbsp;Rot</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/missing_expectations/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>The Hunt for Missing&nbsp;Expectations</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/user_expectations/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>The Wheres and Whens of Users&rsquo;&nbsp;Expectations</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/pleasure_flow_and_meaning/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Pleasure, Flow, and Meaning &ndash; The 3 Approaches to Designing for&nbsp;Delight</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://playbook.uie.com/blog/is-delight-the-best-ux-design-intention" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Is &lsquo;Delight&rsquo; the Best UX Design&nbsp;Intention?</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/themes/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Themes: A Small Change to Product Roadmaps with Large&nbsp;Effects</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END RELATED ARTICLES -->
+    </div>
+  </div>
+</body>
