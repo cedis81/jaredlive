@@ -1,0 +1,319 @@
+<head>
+  <style>
+
+    .flex-grid-thirds {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
+    }
+    .flex-grid-thirds .left {
+      width: 64%;
+      order: 0;
+    }
+
+    .flex-grid-thirds .right {
+      width: 32%;
+      order: 1;
+    }
+
+    .flex-grid-thirds .related-articles {
+      order: 2;
+    }
+
+    .newsletter-container {
+      margin: .5em 0em 1em 0em;
+      padding: 0em;
+    }
+
+    .newsletter h4 {
+      margin-top:0em;
+    }
+
+    .six.column {
+      margin: 1em 0 0;
+      width: 100%;
+    }
+
+    .location {
+      left: -2000px;
+    }
+
+    .video-page {
+      margin: .5em 0em 1em 0em;
+      padding:56.25% 0 0 0;
+      position:relative;
+    }
+
+    .email-box input[type=submit] {
+      float: none;
+      margin-top: 1em;
+    }
+
+    .product-stage {
+      padding: 0em;
+    }
+
+    .card {
+      margin: 1em 0em;
+    }
+
+    a {
+      color: #3BA7C9;
+    }
+
+    .article-title {
+      height: 8em;
+      position: relative;
+    }
+
+    .by-line {
+      color: #313131;
+      position: absolute;
+      top: 5.4em;
+      left: 1.5em;
+    }
+
+    @media only screen and (max-width: 860px) {
+
+      .flex-grid-thirds .left {
+        order: 0;
+        width: 100%;
+      }
+
+      .flex-grid-thirds .right {
+        order: 2;
+        width: 100%;
+      }
+
+      .flex-grid-thirds .related-articles {
+        order: 1;
+        width: 100%;
+      }
+
+      .newsletter-container {
+        max-width: 860px;
+      }
+
+      .six.column {
+        margin: 1em 1em 0em 0em;
+        width: 45%;
+      }
+
+      .product-stage {
+        background-color: unset;
+      }
+
+      .txt-center {
+        text-align: center;
+      }
+
+      .article-title {
+        height: 7em;
+        position: relative;
+      }
+
+      .by-line {
+        color: #313131;
+        position: absolute;
+        top: 4em;
+        left: 1.5em;
+      }
+
+    }
+
+    @media only screen and (max-width: 500px) {
+      .flex-grid-thirds .right {
+        width: 100%;
+      }
+
+      .newsletter, .card {
+        border-radius: 4px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+        -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+        -moz-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.35);
+      }
+
+      .six.column {
+        width: 100%;
+      }
+
+      .article-title {
+        height: 9em;
+        position: relative;
+      }
+
+      .by-line {
+        color: #313131;
+        position: absolute;
+        top: 6em;
+        left: 1.5em;
+      }
+    }
+
+    @media only screen and (max-width: 360px) {
+      .article-title {
+        height: 10em;
+        position: relative;
+      }
+
+      .by-line {
+        color: #313131;
+        position: absolute;
+        top: 7em;
+        left: 1.5em;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="live-page">
+    <div>
+      <h1 class="txt-center">
+        Is Design Metrically&nbsp;Opposed?
+      </h1>
+    </div>
+    <div class="flex-grid-thirds">
+      <!-- LEFT COLUMN -->
+      <div class="left">
+        <div>
+          <div class="video-page">
+            <iframe
+              src="https://player.vimeo.com/video/138359368"
+              style="position:absolute;top:0;left:0;width:100%;height:100%;"
+              frameborder="0"
+              allow="autoplay; encrypted-media; fullscreen"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+        <div>
+          <p>
+            <a href="https://uie.com/wp-assets/transcripts/is_design_metrically_opposed.html" target="_blank">Video Transcript</a> | <a href="https://asset.uie.com/slides/beyond_the_ux_tipping_point.pdf" target="_blank">Presentation&nbsp;Slides</a>
+          </p>
+          <p>
+            In this presentation, Jared &nbsp;shares:
+          </p>
+          <ul>
+            <li>
+              What easily-collected analytics, like bounce rate and time-on-page, actually tell us about our users’ experiences
+            </li>
+            <li>
+              Why advanced techniques, like a money-left-on-the-table analysis and the CE11, show us how metrics can impact design
+            </li>
+            <li>
+              Why asking, ”Would you recommend this?“ isn’t an ideal way to measure brand engagement
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- END LEFT COLUMN -->
+      <!-- RIGHT COLUMN -->
+
+      <div class="right">
+        <section class="newsletter-container email-box" id="subscribe">
+          <form class="newsletter" action="https://reg.uie.com/newsletter/" method="post">
+            <h4>Want to improve your organization&rsquo;s UX&nbsp;strategy?</h4>
+            <div class="p" id="success">Subscribe to our new newsletter <em>UX Strategy with Jared Spool</em>. Learn how successful organizations have made UX strategic through research, articles, and advice sent straight to your&nbsp;inbox.
+            </div>
+            <div id="form">
+              <div class="row">
+                <div class="six column">
+                  <label for="email" class="sr-only">Email</label>
+                  <input type="email" name="email" id="email" placeholder="Email" required="">
+                </div>
+                <div class="field six column">
+                  <label for="fname" class="sr-only">First Name</label>
+                  <input type="text" name="fname" id="fname" placeholder="First Name">
+                </div>
+                <!--<div class="four column">
+                  <label for="lname" class="sr-only">Last Name</label>
+                  <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </div>-->
+                <div class="location">
+                  <label for="location" class="sr-only">Location</label>
+                  <input type="text" name="location" id="location" placeholder="Location">
+                </div>
+                <input type="hidden" name="lname" id="lname" placeholder="Last Name">
+              </div>
+
+              <div class="field row last">
+                <p class="small promise">
+                  Center Centre &ndash; UIE values your privacy. We will never sell your email&nbsp;address.
+                </p>
+
+                <input type="submit" value="Sign Me Up">
+              </div>
+
+              <input type="hidden" id="listid" name="listid" value="382de78e4c">
+              <input type="hidden" id="interestid" name="interestid" value="b2e886c648">
+              <input type="hidden" name="successurl" value="https://uie.com#success">
+              <input type="hidden" name="directsignup" value="https://mailchi.mp/uie.com/uxstrategy">
+            </div>
+
+            <style>
+              #successMessage {display: none;}
+              .p {margin-bottom:.5em;}
+            </style>
+
+            <div id="successMessage">
+              <p>Success! You've been added.</p>
+              <p>Thank you for subscribing to <em>UX Strategy with Jared Spool.</em></p>
+            </div>
+          </form>
+        </section>
+
+      </div>
+      <!-- END RIGHT COLUMN -->
+      <!-- RELATED ARTICLES -->
+      <div class="related-articles">
+        <h4 class="txt-center">
+          Want to learn more? Check out these&nbsp;articles:
+        </h4>
+        <div class="product-stage">
+          <div class="card">
+            <a href="https://articles.uie.com/ux-metrics-identify-trackable-footprints-and-avoid-the-woozles/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>UX Metrics: Identify Trackable Footprints and Avoid the&nbsp;Woozles</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/the-challenge-of-identifying-ux-success-metrics/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>The Challenge of Identifying UX Success&nbsp;Metrics</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://playbook.uie.com/blog/integrating-ux-metrics-into-your-ux-strategy" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Integrating UX Metrics Into Your UX&nbsp;Strategy</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/net-promoter-score-considered-harmful-and-what-ux-professionals-can-do-about-it/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Net Promoter Score Considered Harmful (and What UX Professionals Can Do About&nbsp;It)</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+          <div class="card">
+            <a href="https://articles.uie.com/unconventional-techniques-for-better-insights-from-satisfaction-surveys/" target="_blank" class="article-title">
+              <div class="card-body">
+                <p><strong>Unconventional Techniques for Better Insights from Satisfaction&nbsp;Surveys</strong></p>
+              </div>
+              <p class="by-line">By: Jared M.&nbsp;Spool</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END RELATED ARTICLES -->
+    </div>
+  </div>
+</body>
