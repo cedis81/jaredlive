@@ -12,7 +12,7 @@ While this repo is titled "jaredlive", this project is NOT the same as the Jared
 4. CTA to sign up for the _UX Strategy with Jared Spool_ newsletter
 5. Form to contact Jared
 ---  
-##### Create a New Page
+### Create a New Page
 1. Duplicate a video page that already exists using Atom on your local machine. The working directory is /Users/Shared/jaredlive
 2. Update the following HTML sections:
   1. h1 title to the title of the video
@@ -40,7 +40,7 @@ While this repo is titled "jaredlive", this project is NOT the same as the Jared
 Any other content that needs to be updated can be done in Atom, then pasted into the page on WordPress.
 
 ---
-##### Assets and Other Resources
+### Assets and Other Resources
 
 **Transcripts** are located in /home/uiewp/uiewp/wp-assets/transcripts and can be accessed through Transmit.
 
@@ -59,14 +59,14 @@ Once that is complete, you can transfer the file to the wp-assets/transcripts di
 
 
 ---
-##### Future considerations:
+### Future considerations:
 Below are unresolved issues to be addressed in future versions:  
 1. Including a contact form. Current challenges are how to create a means to contact Jared without seeming like it will invite a sales call, and where to place it on the page.
 2. Descriptions for each related article and why a user would want to click on the link for the resource. Current challenge is how to fit that in stylistically.
 3. Adding open graph images to each individual page so that when it is shared, it shows either a picture of Jared giving a talk, or a slide from the talk instead of the UIE logo. Current issue is the header page is pulling a set of OG tags as part of the header from WordPress.
 4. Adding open graph text with a short description of the talk, instead of the UIE line. Current issue is the header page is pulling a set of OG tags as part of the header from WordPress.
 ---
-##### Live links:  
+### Live links:  
 1. Beyond The UX Tipping Point: https://www.uie.com/tipping/
 2. Building a Winning UX Strategy Using the Kano Model: https://www.uie.com/kano/
 3. Design is a Team Sport: https://www.uie.com/designteam/
