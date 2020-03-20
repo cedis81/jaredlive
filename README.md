@@ -1,12 +1,12 @@
 # Jared Video Pages
-Jared gives talks at many conferences and meet-ups. These video pages serve as a resource that helps in all phases of these talks.
-- In advance of the presentation, these can be easily shared so attendees have something to look forward to. These have been shared by Jared and conference organizers on social media.
+Jared gives talks at many conferences and meet-ups. These video pages serve as a resource that helps people at the talks understand how to connect with us.
+- In advance of the presentation, these can be easily shared so attendees have something to look forward to. These have been shared by Jared and conference organizers on social media during and after an event. So far, none of these have been shared prior to an event, but an event host may have the option to do so.
 - During the presentation, he references related topics that he cannot go in depth on, but attendees can refer to these resources after the presentation. Attendees have shared these links on their own social media, expressing their enjoyment from listening to Jared speak.
 - Finally, after the presentation, attendees can refer to the video page to get missing notes, related content, and be given an opportunity to share the presentation with others (including, but not limited to, leaders within their organization).
 - With these links, Jared provides attendees a next step interaction with UIE, and a means to share the resources with individuals who could not attend.
 - This could lead to additional conversations that may become sales leads, new speaking engagements, coaching calls or just additional conversations on how Jared and UIE can help other companies and those in the UX community.
 
-While this repo is titled "jaredlive", this project is NOT the same as the Jared Live page that currently exists on uie.com. Some of the content is the same. The Jared Live page shows eight total presentations, where the individual page can focus on the singular topic (with updated copy, videos and links) that relates to what Jared wants to highlight to each individual or group he speaks to. The Jared Live page also does not have easily shareable links (bulky links with anchor tags in the URL), where the intent of these pages is to have an easy to remember link that can be shared easily.
+While this repo is titled "jaredlive", this project is NOT the same as the [Jared Live page](https://www.uie.com/jared-live/) that currently exists on uie.com. Some, but not all, of the content is the same. The Jared Live page shows eight total presentations on the same page, where the individual pages in this repo each focus only one of these topics. The Jared Live page also does not have easily shareable links (bulky links with anchor tags in the URL), where the intent of these pages is to have an easy to remember link that can be shared easily. At the moment there are no plans to remove Jared Live or alter it in any way. For now, these will exist simultaneously until needs change.
 
 [Link to user scenarios](https://docs.google.com/document/d/1lqC9rIqYmJcV5DrvvBW4lFe4mhI_HTWQyopgehbbjrw/) that drove the below list of **priorities**:
 1. Easy to share URL
@@ -25,13 +25,13 @@ To create a new page, you will need the following:
 Steps:
 1. Duplicate a video page that already exists using Atom on your local machine. The working directory is /Users/Shared/jaredlive
 2. Update the following HTML sections:
-  1. h1 title to the title of the video
-  2. Update the video link
-  3. Update the link to transcript. Need a new transcript? Refer to that section below
-  4. Update the link to presentation slides. Need new slides? Refer to that section below
-  5. Update the copy beneath the video
-  6. Update the link, title, and by-line (if necessary) of each card in the related content section at the bottom. You may need to add or remove card divs accordingly. Link to the related content is in the section below
-  7. Unless directed by Jared or someone else, that should be the only changes needed to the template
+    1. h1 title to the title of the video
+    2. Update the video link
+    3. Update the link to transcript. Need a new transcript? Refer to that section below
+    4. Update the link to presentation slides. Need new slides? Refer to that section below
+    5. Update the copy beneath the video
+    6. Update the link, title, and by-line (if necessary) of each card in the related content section at the bottom. You may need to add or remove card divs accordingly. Link to the related content is in the section below
+    7. Unless directed by Jared or someone else, that should be the only changes needed to the template
 3. Log in to uie.com Wordpress account
 4. Navigate to "Pages" on the dashboard on the left side of the screen
 5. At the top of the page, click "Add New"
@@ -64,7 +64,7 @@ Once that is complete, you can transfer the file to the wp-assets/transcripts di
 
 **Slides** are located /home/asset/slides and can be accessed through Transmit. The original slides are located in a Dropbox folder that is pinned in the #web_intern_projects channel. You will want to ensure you use the latest version number for the slides.
 
-[Link to related content](https://docs.google.com/document/d/1-pBnNEFN2qIBA5fWYe37hhlG9I1K0KxVdu6vhnVlQqI/) that will populate the article cards beneath the video.
+[Link to related content](https://docs.google.com/document/d/1-pBnNEFN2qIBA5fWYe37hhlG9I1K0KxVdu6vhnVlQqI/) that will populate the article cards beneath the video. Jared is the best person to update and provide this content.
 
 
 
