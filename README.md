@@ -14,6 +14,9 @@ While this repo is titled "jaredlive", this project is NOT the same as the [Jare
 3. Easily accessible related resources (presentation slides, transcripts, articles and blogs referenced in the presentation)
 4. CTA to sign up for the _UX Strategy with Jared Spool_ newsletter
 5. Form to contact Jared
+
+This project started with intern Ricardo De Jesus, who created the first set of scenarios and sketches. Intern Gabriela Quesada created the first set of pages using Bootstrap. Intern Cedric Hom took Gabriela's page, and changed it from Bootstrap to Flexbox (uie.com was not built with Bootstrap), and took v1 live with direction from Adam, Summer, Leslie and Jared. Scenarios were updated and designs changed. Some next steps are listed below. The original Bootstrap file created by Gabriela is still in this repo, named team_v1.html.
+
 ---  
 ### Create a New Page
 To create a new page, you will need the following:
