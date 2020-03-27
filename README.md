@@ -20,14 +20,17 @@ This project started with intern Ricardo De Jesus, who created the first set of 
 ---  
 ### Create a New Page
 To create a new page, you will need the following:
-- Link to video
+- Link to the video (provided by Jared)
 - Transcript file for the video
 - Slides for the presentation given in the video
 - Copy to describe the video (provided by Jared, Leslie, Summer or Adam)
 
 Steps:
-1. Duplicate a video page that already exists using Atom on your local machine. The working directory is /Users/Shared/jaredlive
-2. Update the following HTML sections:
+1. In iTerm, navigate to directory /Users/Shared/jaredlive
+2. git pull origin master to ensure you have the most up-to-date files
+3. git checkout -b <new branch name> from the master branch to do your work
+4. In Atom, duplicate an existing video page
+5. Update the following HTML sections:
     1. h1 title to the title of the video
     2. Update the video link
     3. Update the link to transcript. Need a new transcript? Refer to that section below
@@ -35,13 +38,15 @@ Steps:
     5. Update the copy beneath the video
     6. Update the link, title, and by-line (if necessary) of each card in the related content section at the bottom. You may need to add or remove card divs accordingly. Link to the related content is in the section below
     7. Unless directed by Jared or someone else, that should be the only changes needed to the template
-3. Log in to uie.com Wordpress account
-4. Navigate to "Pages" on the dashboard on the left side of the screen
-5. At the top of the page, click "Add New"
-6. In the "Enter title here" field, populate the title of the presentation
-7. Below that, edit the Permalink. It should be one or two words from the talk, maximum, to ensure ease of sharing.
-8. Copy and paste the code from Atom into the WYSIWYG, then click on the preview button in the top right corner. Review for accuracy (ensure video plays, links go to the right resource, typos)
-9. Once everything looks good, you can publish. Share with the team for additional sets of eyes to review
+    8. git push origin <branch>
+    9. Have other intern review changes on GitHub, accept pull request and merge to master
+6. Log in to uie.com Wordpress account
+7. Navigate to "Pages" on the dashboard on the left side of the screen
+8. At the top of the page, click "Add New"
+9. In the "Enter title here" field, populate the title of the presentation
+10. Below that, edit the Permalink. It should be one or two words from the talk, maximum, to ensure ease of sharing.
+11. Copy and paste the code from Atom into the WYSIWYG, then click on the preview button in the top right corner. Review for accuracy (ensure video plays, links go to the right resource, typos)
+12. Once everything looks good, you can publish. Share with the team for additional sets of eyes to review
 
 **Making Updates to Design**
 1. In WordPress, there is a page called "Video page test" that you can use to preview working code. Click on that page to edit
@@ -57,19 +62,20 @@ Any other content that needs to be updated can be done in Atom, then pasted into
 
 **Transcripts** are located in /home/uiewp/uiewp/wp-assets/transcripts and can be accessed through Transmit.
 
-If a transcript does not exist, a new one will need to be generated on [rev.com](https://www.rev.com/). Speak with Adam for authorization to generate this transcript. You simply need to add a link to the video, and rev will generate a transcript. From there, follow steps 1-7 from the ["Putting the Transcript in Place" section in notion](https://www.notion.so/centercentre/AYCL-New-Seminar-Release-f607f76923734f4ab055502b88036952). Next, you'll open a copy of the prior transcript and save it as a new file. Then you'll want to update the following:
-1. Title in the head tag and in the h1 in the div with id="header"
-2. Link for the h1 in the div with id="header"
-3. The location and date of the presentation in the small tag in the div with id="header"
-4. Replace the p tags with the new transcript content in the div with id="article"
+If a transcript does not exist, a new one will need to be generated on [rev.com](https://www.rev.com/). Speak with Adam for authorization to generate this transcript. You simply need to add a link to the video, and rev will generate a transcript. From there, follow steps 1-7 from the ["Putting the Transcript in Place" section in notion](https://www.notion.so/centercentre/AYCL-New-Seminar-Release-f607f76923734f4ab055502b88036952).
 
-Once that is complete, you can transfer the file to the wp-assets/transcripts directory on the server. Check the link to ensure it works, and check that the content is correct.
+1. Download a prior transcript from /home/uiewp/uiewp/wp-assets/transcripts directory in Transmit by right-clicking and selecting download. This file will be saved in /Users/intern.
+2. Open it in Atom by going to file > open > Users > intern. Save it as a new HTML file on your desktop. Then you'll want to update the following:
+    1. Title in BOTH the head tag and in the h1 in the div with id="header"
+    2. Link for the h1 in the div with id="header"
+    3. The location and date of the presentation in the small tag in the div with id="header"
+    4. Replace the p tags with the new transcript content in the div with id="article"
+3. Once that is complete, you can transfer the file to the /home/uiewp/uiewp/wp-assets/transcripts directory on the server.
+4. Right click the file in Transmit and copy URL. Paste the link in your browser to ensure it opens the transcript you just updated, and check that the content is correct. You will need to replace "sftp://asset.uie.com//home/uiewp/uiewp" with "https://www.uie.com" in your browser.
 
-**Slides** are located /home/asset/slides and can be accessed through Transmit. The original slides are located in a Dropbox folder that is pinned in the #web_intern_projects channel. You will want to ensure you use the latest version number for the slides.
+**Slides** are located /home/asset/slides and can be accessed through Transmit. The original slides are located in Jared's Dropbox folder that is pinned in the #web_intern_projects channel. You will want to ensure you use the latest version number for the slides.
 
 [Link to related content](https://docs.google.com/document/d/1-pBnNEFN2qIBA5fWYe37hhlG9I1K0KxVdu6vhnVlQqI/) that will populate the article cards beneath the video. Jared is the best person to update and provide this content.
-
-
 
 ---
 ### Future considerations:
