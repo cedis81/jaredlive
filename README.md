@@ -1,3 +1,19 @@
+Here, you will find my Center Centre - UIE intern project, completed February, 2020.
+
+###A brief history of this project:
+For the first three months of the Center Centre - UIE internship program, you take over the social media and daily email marketing campaigns from the current intern. The second three months, you train the next intern on these tasks, and undertake a project that hopefully simultaneously fills a business need and lets you further develop your skills.
+
+There was an intern project assigned to two previous interns that had not been completed and deployed. Prior to the pandemic, Jared had been presenting at conventions and events. There was no easy way for him to share information with attendees - presentation slides, related resources on topics he doesn't have time to expand on, and a transcript. The first intern worked with Jared to define the user scenarios and sketches. The second intern created an HTML version of those sketches using Bootstrap.
+
+###The process:
+When the project idea was presented to me, I took a methodical approach to start. I parsed through previous meeting agendas, Slack messages and code from my laptop to understand everything about it. Once I got everything organized to start, I led three weekly meetings. These meetings were attended by with the Marketing and Design lead, Center Centre Co-Founder, Director of Online Products, and the second intern. These meetings took place to discuss progress, get design feedback, and to ensure we were on schedule with project goals.
+
+The UIE site did not use Bootstrap, which is what the prior intern created. I took the sketches and developed a new template using Flexbox to keep it mobile friendly. An upcoming speaking engagement provided an opportunity to use this page, so we ramped up and presented the first iteration to Jared on Thursday evening. During the presentation, several design and layout changes were desired, to the point that a quick turn around was not likely. On Friday morning, in a meeting with the Co-Founder and desgn lead, we decided to try achieving an MVP for use by Friday night. Together, with their design direction, I was able to complete MVP to Jared's satisfaction and the tweets went out per the below photos.
+
+![Jared tweets link](twitter.png)
+
+The below is the original documentation created at Center Centre - UIE
+***
 # Jared Video Pages
 Jared gives talks at many conferences and meet-ups. These video pages serve as a resource that helps people at the talks understand how to connect with us.
 - In advance of the presentation, these can be easily shared so attendees have something to look forward to. These have been shared by Jared and conference organizers on social media during and after an event. So far, none of these have been shared prior to an event, but an event host may have the option to do so.
@@ -17,7 +33,7 @@ While this repo is titled "jaredlive", this project is NOT the same as the [Jare
 
 This project started with intern Ricardo De Jesus, who created the first set of scenarios and sketches. Intern Gabriela Quesada created the first set of pages using Bootstrap. Intern Cedric Hom took Gabriela's page, and changed it from Bootstrap to Flexbox (uie.com was not built with Bootstrap), and took v1 live with direction from Adam, Summer, Leslie and Jared. Scenarios were updated and designs changed. Some next steps are listed below. The original Bootstrap file created by Gabriela is still in this repo, named team_v1.html.
 
----  
+---
 ### Create a New Page
 To create a new page, you will need the following:
 - Link to the video (provided by Jared)
@@ -79,13 +95,13 @@ If a transcript does not exist, a new one will need to be generated on [rev.com]
 
 ---
 ### Future considerations:
-Below are unresolved issues to be addressed in future versions:  
+Below are unresolved issues to be addressed in future versions:
 1. Including a contact form. Current challenges are how to create a means to contact Jared without seeming like it will invite a sales call, and where to place it on the page. Part of the issue is getting the right copy.
 2. Descriptions for each related article and why a user would want to click on the link for the resource. Current challenge is how to fit that in stylistically.
 3. Adding open graph (OG) images to each individual page so that when it is shared, it shows either a picture of Jared giving a talk, or a slide from the talk instead of the UIE logo. Current issue is the header page is pulling a set of OG tags as part of the header from WordPress.
 4. Adding open graph (OG) text with a short description of the talk, instead of the UIE line. Current issue is the header page is pulling a set of OG tags as part of the header from WordPress.
 ---
-### Live links:  
+### Live links:
 1. Beyond The UX Tipping Point: https://www.uie.com/tipping/
 2. Building a Winning UX Strategy Using the Kano Model: https://www.uie.com/kano/
 3. Design is a Team Sport: https://www.uie.com/designteam/
