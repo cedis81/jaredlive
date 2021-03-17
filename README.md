@@ -12,7 +12,7 @@ The UIE site did not use Bootstrap, which is what the prior intern created. I to
 
 ![Jared tweets link](twitter.png)
 
-The below is the original documentation created at Center Centre - UIE
+The below is the original documentation I created at Center Centre - UIE
 ***
 # Jared Video Pages
 Jared gives talks at many conferences and meet-ups. These video pages serve as a resource that helps people at the talks understand how to connect with us.
